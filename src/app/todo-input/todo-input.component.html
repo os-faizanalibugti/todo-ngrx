@@ -1,0 +1,11 @@
+<form (ngSubmit)="submitForm(form)" #form="ngForm" class="relative pl-8 pr-8">
+  <div class="absolute m-2 rounded-full h-6 w-6 border border-gray-500"></div>
+  <input
+    class="w-full p-2 rounded-md pl-10 dark:bg-slate-700"
+    type="text"
+    placeholder="Create a new todo..."
+    name="todo"
+    required
+    [(ngModel)]="todoInput"
+  />
+</form>
